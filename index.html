@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../static/index.css">
+    </head>
+    <body>
+        {% for item in urls %}
+        <div class="project-div">
+            <a class="title" href="{{item.url}}">{{item.name}}</a>
+            <p class="description">{{item.desc}}</p>
+        </div>
+        {% endfor %}
+    </body>
+</html>
+<script src="" async defer></script>
